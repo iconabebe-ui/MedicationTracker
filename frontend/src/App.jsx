@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  // Use your actual Render URL here
-  const BACKEND_URL = "https://medicationtracker-icona.onrender.com";
+  // Fixed: Removed the double "const"
+  const BACKEND_URL = "https://medicationtracker-backend.onrender.com";
 
   const handleLogin = () => {
     // This sends the user to your Render backend to start the Google login
