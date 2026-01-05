@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291986744746",
+    "project_id": "medicationreminder-6a86d",
+    "storage_bucket": "medicationreminder-6a86d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291986744746:android:6dba89b1d6318bdb7d37d3",
+        "android_client_info": {
+          "package_name": "com.aims.medicationreminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzXgBtPdNog6m-hTWlBb3RHbbz_wjEG58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
