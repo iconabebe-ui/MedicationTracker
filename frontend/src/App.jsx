@@ -2,34 +2,49 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  // Fixed: Removed the double "const"
+  // This is your live Render backend URL
   const BACKEND_URL = "https://medicationtracker-backend.onrender.com";
 
   const handleLogin = () => {
-    // This sends the user to your Render backend to start the Google login
+    // This redirects the user to the Google Auth route on your backend
     window.location.href = `${BACKEND_URL}/auth/google`;
   };
 
   return (
     <div className="app-container">
-      <h1>💊 Medication Tracker</h1>
+      <header className="app-header">
+        <h1>💊 Medication Tracker</h1>
+      </header>
       
-      <div className="card">
-        <h2>Welcome</h2>
-        <p>Please log in to manage your medications securely.</p>
+      <main className="card">
+        <h2>Welcome Back</h2>
+        <p>Manage your prescriptions and set reminders easily.</p>
         
-        {/* The Google Login Button */}
-        <button 
-          onClick={handleLogin} 
-          style={{ backgroundColor: '#4285F4', color: 'white', padding: '10px 20px', cursor: 'pointer', border: 'none', borderRadius: '4px' }}
-        >
-          Login with Google
-        </button>
-      </div>
+        <div className="login-section">
+          <button 
+            onClick={handleLogin} 
+            className="login-button"
+            style={{ 
+              backgroundColor: '#4285F4', 
+              color: 'white', 
+              padding: '12px 24px', 
+              cursor: 'pointer', 
+              border: 'none', 
+              borderRadius: '5px',
+              fontSize: '16px',
+              fontWeight: 'bold',
+              marginTop: '20px'
+            }}
+          >
+            Login with Google
+          </button>
+        </div>
+      </main>
 
-      <p className="footer">
-        Connected to: {BACKEND_URL}
-      </p>
+      <footer className="footer">
+        <p>Status: Connected to Backend</p>
+        <small>{BACKEND_URL}</small>
+      </footer>
     </div>
   )
 }
