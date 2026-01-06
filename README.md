@@ -1,4 +1,3 @@
-Here is the complete, formatted Markdown content for your `README.md`. You can copy and paste this directly into your file.
 
 ---
 
